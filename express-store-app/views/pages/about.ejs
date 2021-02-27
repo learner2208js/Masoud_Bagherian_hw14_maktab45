@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/about.css" />
+    <title>about page</title>
+  </head>
+  <body>
+    <%- include('layout/header', {hasSearchBox}) %>
+    <div class="main">
+      <div class="inner-container">
+        <div class="about">
+          <h3 class="about__title">about us</h3>
+          <p class="about__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+            quibusdam eveniet voluptate, cumque aut delectus impedit nam hic
+            consectetur cum distinctio odio qui mollitia autem nisi? Quod vel
+            optio quibusdam neque ipsa, rem consequatur aperiam nobis amet,
+            accusantium minus blanditiis nihil totam quasi accusamus! Voluptate
+            illo molestias molestiae impedit modi vel, officia harum neque
+            placeat! Nemo aliquam nihil sequi veniam, ipsum exercitationem
+            quisquam praesentium accusantium rerum, libero deserunt
+            reprehenderit dolores voluptatibus iure nam aut amet repellendus
+            doloribus? Eius laboriosam repellendus ex reprehenderit error qui
+            quia quos officiis aliquid aut deserunt cupiditate dolorum nemo
+            perferendis, illum, inventore temporibus, magnam quas. Quo!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .querySelector('.main-nav')
+        .children[1].querySelector('.main-nav__link')
+        .classList.add('main-nav__link--active');
+    </script>
+  </body>
+</html>

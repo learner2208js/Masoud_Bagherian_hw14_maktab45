@@ -1,0 +1,7 @@
+.contact__title {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  color: var(--color-card-text);
+  max-width: 460px;
+}

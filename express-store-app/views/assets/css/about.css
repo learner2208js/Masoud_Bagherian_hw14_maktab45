@@ -1,0 +1,13 @@
+.about {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 460px;
+}
+.about__title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--color-card-text);
+}
+.about__text {
+}

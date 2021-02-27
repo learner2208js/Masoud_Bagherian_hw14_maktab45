@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/product.css" />
+    <title>product page</title>
+  </head>
+  <body>
+    <%- include('layout/header.ejs') %>
+    <div class="main">
+      <div class="inner-container">
+        <div class="product product--single">
+          <div class="product__image">
+            <img src="/<%= product.image %>" alt="" class="image" />
+          </div>
+          <!-- end .product__image -->
+          <div class="product__content">
+            <div class="product__item">
+              <h5 class="product__label">name</h5>
+              <h3 class="product__name"><%= product.name %></h3>
+            </div>
+            <div class="product__item">
+              <h5 class="product__label">material</h5>
+              <h4 class="product__material"><%= product.material %></h4>
+            </div>
+            <div class="product__item">
+              <h5 class="product__label">size</h5>
+              <h4 class="product__size"><%= product.size %></h4>
+            </div>
+            <div class="product__footer">
+              <a href="/product/<%= product.id %>" class="product__link"
+                >go shopping</a
+              >
+              <h4 class="product__price">$<%= product.price %></h4>
+            </div>
+          </div>
+          <!-- end .product__content -->
+        </div>
+        <!-- end .product -->
+      </div>
+    </div>
+  </body>
+</html>

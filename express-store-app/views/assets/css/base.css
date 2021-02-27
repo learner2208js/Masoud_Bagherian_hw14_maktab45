@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #192a56;
+  --color-secondary: #273c75;
+  --color-tritiary: #4991cc;
+  --color-border: #ddd;
+  --color-card-bg: #eee;
+  --color-card-text: #333;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main .inner-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1100px;
+}

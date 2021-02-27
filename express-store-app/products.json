@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Men's Air Monarch IV Cross Trainer",
+    "material": "Leather-And-Synthetic",
+    "price": "46.42",
+    "size": 41,
+    "image": "assets/image/nike-cross-trainer.jpg" 
+  },
+  {
+    "id": 2,
+    "name": "Merrell Men's Moab 2 Vent Hiking Shoe",
+    "material": "100% suede leather, mesh",
+    "price": "35.96",
+    "size": 42,
+    "image": "assets/image/merrell-hiking-shoe.jpg" 
+  },
+  {
+    "id": 3,
+    "name": "Skechers Men's Equalizer Double Play Slip-On Loafer",
+    "material": "100% Knit mesh",
+    "price": "63.17",
+    "size": 41,
+    "image": "assets/image/skechers-double-play.jpg" 
+  },
+  {
+    "id": 4,
+    "name": "Skechers Men's Go Max-Athletic Air Mesh Slip on Walking Shoe Sneaker",
+    "material": "100% Textile",
+    "price": "33.94",
+    "size": 40,
+    "image": "assets/image/skechers-walking-shoe.jpg" 
+  },
+  {
+    "id": 5,
+    "name": "Hey Dude Men's Wally Sox Loafer",
+    "material": "Synthetic sole",
+    "price": "49.99",
+    "size": 42,
+    "image": "assets/image/Hey-Dude-Men's-Wally-Sox-Loafer.jpg" 
+  },
+  {
+    "id": 6,
+    "name": "ASICS Women's Gel-Contend 6 Running Shoes",
+    "material": "Synthetic-and-mesh",
+    "price": "34.97",
+    "size": 39,
+    "image": "assets/image/women-running-shoe.jpg" 
+  },
+  {
+    "id": 7,
+    "name": "Skechers Men's Afterburn Memory-Foam Lace-up Sneaker",
+    "material": "100% Leather/Synthetic",
+    "price": "37.43",
+    "size": 42,
+    "image": "assets/image/skechers-lace-up-sneaker.jpg" 
+  },
+  {
+    "id": 8,
+    "name": "Skechers Men's Moreno Canvas Oxford Shoe",
+    "material": "Canvas",
+    "price": "31.61",
+    "size": 43,
+    "image": "assets/image/skechers-canvas-shoe.jpg" 
+  },
+  {
+    "id": 9,
+    "name": "Skechers Women's Squad SR Food Service Shoe",
+    "material": "100% Synthetic",
+    "price": "43.96",
+    "size": 40,
+    "image": "assets/image/skechers-food-service-shoe.jpg" 
+  },
+  {
+    "id": 10,
+    "name": "New Balance Men's Fresh Foam Roav V1 Sneaker",
+    "material": "100% Mesh",
+    "price": "26.27",
+    "size": 42,
+    "image": "assets/image/men-foam-sneaker.jpg" 
+  },
+  {
+    "id": 11,
+    "name": "Under Armour Men's Charged Assert 8 Running Shoe",
+    "material": "Textile",
+    "price": "42.99",
+    "size": 41,
+    "image": "assets/image/men-running-shoe.jpg" 
+  },
+  {
+    "id": 12,
+    "name": "Ryka Women's Devotion Plus 2 Oxford",
+    "material": "Synthetic-and-mesh",
+    "price": "49.97",
+    "size": 38,
+    "image": "assets/image/ryka-women.jpg" 
+  },
+  {
+    "id": 13,
+    "name": "BZees Women's Golden Ankle Boot",
+    "material": "Synthetic sole",
+    "price": "39.40",
+    "size": 39,
+    "image": "assets/image/bzees-women.jpg" 
+  },
+  {
+    "id": 14,
+    "name": "Brooks Men's Beast 20",
+    "material": "rubber sole",
+    "price": "123.68",
+    "size": 42,
+    "image": "assets/image/brooks-men.jpg" 
+  },
+  {
+    "id": 15,
+    "name": "adidas Men's S2g Golf Shoe",
+    "material": "Synthetic sole",
+    "price": "59.97",
+    "size": 43,
+    "image": "assets/image/adidas-golf-shoe.jpg" 
+  },
+  {
+    "id": 16,
+    "name": "Merrell Women's Moab 2 Vent Hiking Shoe",
+    "material": "100% Suede Leather/Mesh",
+    "price": "69.04",
+    "size": 40,
+    "image": "assets/image/merrell-women-hiking-shoe.jpg" 
+  },
+  {
+    "id": 17,
+    "name": "Columbia Women's Newton Ridge Plus Waterproof Amped Hiking Shoe",
+    "material": "Rubber sole",
+    "price": "62.61",
+    "size": 38,
+    "image": "assets/image/women-water-proof-hiking-shoe.jpg" 
+  }
+]
