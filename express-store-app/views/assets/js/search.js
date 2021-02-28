@@ -17,6 +17,7 @@ function searchProduct() {
     const responseBody = JSON.parse(response);
     const products = responseBody.data.products;
     fillProductsList(products, this.value);
+    highlightMatchedWords(this.value.trim());
   });
 }
 function fillProductsList(products, term) {
@@ -59,5 +60,22 @@ function fillProductsList(products, term) {
   <!-- end .product-wrapper -->`;
   });
 }
-
+function highlightMatchedWords(term) {
+  highlightNameSection(term);
+  hightlihtMaterialSection(term);
+}
+function highlightNameSection(term) {
+  const nameParts = document.querySelectorAll('.product__name');
+  nameParts.forEach((name) => {
+    const text = name.textContent;
+    name.innerHTML = highlightText(text, term);
+  });
+}
+function hightlihtMaterialSection(term) {
+  const materialParts = document.querySelectorAll('.product__material');
+  materialParts.forEach((material) => {
+    const text = material.textContent;
+    material.innerHTML = highlightText(text, term);
+  });
+}
 searchInput.addEventListener('input', searchProduct);
