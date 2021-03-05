@@ -1,0 +1,66 @@
+body {
+  background-color: #e6e6e6;
+}
+
+.toast {
+  color: #721c24;
+  background-color: #f8d7da;
+  position: relative;
+  border-radius: 5px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+.toast__body {
+  padding: 14px;
+}
+.toast__line {
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  background-color: #721c24;
+}
+.toast.success {
+  color: #155724;
+  background-color: #d4edda;
+}
+.toast.success .toast__line {
+  background-color: #155724;
+}
+.toast.fill .toast__line {
+  transition: width 2s linear;
+  width: 100%;
+}
+
+.login-form {
+  margin: 0 20px;
+  padding-top: 20px;
+}
+.login-form__heading {
+  font-weight: normal;
+  font-size: inherit;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login-form__item {
+  margin-bottom: 20px;
+}
+.login-form__input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 14px 10px;
+  font: inherit;
+  outline: none;
+  width: 100%;
+}
+
+.login-form__btn {
+  background-color: #3498db;
+  padding: 12px 25px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+}

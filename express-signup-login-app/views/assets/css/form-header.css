@@ -1,0 +1,32 @@
+.form-header__intro {
+  border-bottom: 1px solid#ddd;
+  margin: 0 20px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 700px) {
+  .form-header__intro {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.form-header__message {
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: inherit;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  .form-header__message {
+    margin-bottom: 0;
+  }
+}
+.form-header__link {
+  text-decoration: none;
+  background-color: #3498db;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/fonts/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/form-header.css" />
+    <link rel="stylesheet" href="/assets/css/login.css" />
+    <link rel="stylesheet" href="/assets/css/form-footer.css" />
+    <title>login page</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <main class="login-body">
+        <% const data = {link:{text: 'ایجاد حساب کاربری', href: '/sign-up'},
+        heading: 'اگر در سایت حساب ندارید، ثبت نام کنید'}%> <%-
+        include('partials/form-header.ejs', data) %>
+        <form class="login-form" id="login-form" autocomplete="off">
+          <div class="toast" id="toast">
+            <p class="toast__body" id="toast-body"></p>
+            <span class="toast__line" id="toast-line"></span>
+          </div>
+          <h3 class="login-form__heading">
+            اگر در سایت حساب کاربری دارید، وارد شوید
+          </h3>
+          <div class="login-form__item">
+            <input
+              type="text"
+              class="login-form__input"
+              placeholder="نام کاربری را وارد کنید"
+              id="username"
+            />
+          </div>
+          <!-- end .login-form__item -->
+          <div class="login-form__item">
+            <input
+              type="text"
+              class="login-form__input"
+              placeholder="رمز عبور را وارد کنید"
+              id="password"
+            />
+          </div>
+          <!-- end .login-form__item -->
+          <button class="login-form__btn" id="submit-btn" data-link="true">
+            ارسال اطلاعات
+          </button>
+          <%- include('partials/form-footer.ejs') %>
+        </form>
+      </main>
+    </div>
+    <script src="/assets/js/ajax.js"></script>
+    <script src="/assets/js/slide.js"></script>
+    <script src="/assets/js/login.js"></script>
+  </body>
+</html>

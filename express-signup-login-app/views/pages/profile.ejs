@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/profile.css" />
+    <link rel="stylesheet" href="/assets/css/edit-form.css" />
+    <link rel="stylesheet" href="/assets/css/form-alerts.css" />
+    <title>profile page</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="profile" id="profile">
+        <ul class="menu">
+          <li class="menu__item active">مشخصات کاربری</li>
+          <li class="menu__item">ویرایش پروفایل</li>
+        </ul>
+        <div class="profile__contents">
+          <div class="profile__section active">
+            <h3 class="info__title">مشخصات کاربری</h3>
+            <ul class="info__list">
+              <li class="info__item">
+                <h4 class="info__label">نام کاربری</h4>
+                <p class="info__value" id="username-info"></p>
+              </li>
+              <li class="info__item">
+                <h4 class="info__label">رمز عبور</h4>
+                <p class="info__value" id="password-info"></p>
+              </li>
+              <li class="info__item">
+                <h4 class="info__label">ایمیل</h4>
+                <p class="info__value" id="email-info"></p>
+              </li>
+              <li class="info__item">
+                <h4 class="info__label">جنسیت</h4>
+                <p class="info__value" id="gender-info"></p>
+              </li>
+            </ul>
+            <button class="info__btn info__btn--exit" id="info-btn-exit">
+              خروج از سیستم
+            </button>
+          </div>
+          <!-- end .profile__section -->
+          <div class="profile__section">
+            <form class="edit-form" autocomplete="off" id="edit-form">
+              <% const message = 'تغییرات با موفقیت اعمال شد' %> <%-
+              include('partials/form-alerts.ejs', {message}) %>
+              <div class="edit-form__form-group">
+                <label for="username" class="edit-form__label"
+                  >نام کاربری</label
+                >
+                <input class="edit-form__input" type="text" id="username" />
+              </div>
+              <!-- end .edit-form__form-group -->
+
+              <div class="edit-form__form-group">
+                <label for="password" class="edit-form__label">رمز عبور</label>
+                <input class="edit-form__input" type="text" id="password" />
+              </div>
+              <!-- end .edit-form__form-group -->
+
+              <div class="edit-form__form-group">
+                <label for="email" class="edit-form__label">ایمیل</label>
+                <input class="edit-form__input" type="text" id="email" />
+              </div>
+              <!-- end .edit-form__form-group -->
+              <div class="edit-form__selection">
+                <h4 class="edit-form__label">جنسیت</h4>
+                <div class="edit-form__row">
+                  <div class="edit-form__option">
+                    <label for="female" class="edit-form__gender">زن</label>
+                    <input
+                      type="radio"
+                      class="edit-form__radio"
+                      name="gender"
+                      value="female"
+                      id="female"
+                    />
+                  </div>
+                  <div class="edit-form__option">
+                    <label for="male" class="edit-form__gender">مرد</label>
+                    <input
+                      type="radio"
+                      class="edit-form__radio"
+                      name="gender"
+                      value="male"
+                      id="male"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- end .edit-form__selection -->
+              <div class="edit-form__controlls">
+                <button
+                  class="edit-form__btn edit-form__btn--change"
+                  id="edit-btn-change"
+                  data-link="true"
+                >
+                  اعمال تغییرات</button
+                ><button
+                  class="edit-form__btn edit-form__btn--exit"
+                  id="edit-btn-exit"
+                  data-link="true"
+                >
+                  خروج از سیستم
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- end .profile__section -->
+        </div>
+      </div>
+      <!-- end .profile -->
+    </div>
+    <script src="/assets/js/ajax.js"></script>
+    <script src="/assets/js/slide.js"></script>
+    <script src="/assets/js/profile-tab-menu.js"></script>
+    <script src="/assets/js/profile-actions.js"></script>
+    <script src="/assets/js/profile-edit-form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/fonts/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/form-header.css" />
+    <link rel="stylesheet" href="/assets/css/signup.css" />
+    <link rel="stylesheet" href="/assets/css/form-alerts.css" />
+    <link rel="stylesheet" href="/assets/css/form-footer.css" />
+    <title>sign up</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="signup-body">
+        <% const data = {link:{text: 'ورود به سایت', href: '/login'}, heading:
+        'اگر در سایت حساب کاربری دارید، وارد شوید'}%> <%-
+        include('partials/form-header.ejs', data) %>
+        <form class="signup-form" id="signup-form" autocomplete="off">
+          <% const message = 'ثبت نام با موفقیت انجام شد' %> <%-
+          include('partials/form-alerts.ejs', {message }) %>
+
+          <h3 class="signup-form__heading">اطلاعات کاربری</h3>
+
+          <div class="signup-form__item">
+            <input
+              type="text"
+              class="signup-form__input"
+              placeholder="نام کاربری را وارد کنید"
+              name="username"
+              id="username"
+            />
+          </div>
+          <!-- end .signup-form__item -->
+          <div class="signup-form__item">
+            <input
+              type="text"
+              class="signup-form__input"
+              placeholder="رمز عبور را وارد کنید"
+              name="password"
+              id="password"
+            />
+          </div>
+          <!-- end .signup-form__item -->
+          <div class="signup-form__item">
+            <input
+              type="text"
+              class="signup-form__input"
+              placeholder="ایمیل خود را وارد کنید"
+              name="email"
+              id="email"
+            />
+          </div>
+          <!-- end .signup-form__item -->
+          <div class="signup-form__item">
+            <h4 class="signup-form__tag">جنسیت</h4>
+            <div class="signup-form__selection">
+              <div class="signup-form__option">
+                <label for="female" class="signup-form__gender">زن</label
+                ><input
+                  class="signup-form__radio"
+                  type="radio"
+                  name="gender"
+                  value="female"
+                  id="female"
+                  checked
+                />
+              </div>
+              <!-- end .signup-form__option -->
+              <div class="signup-form__option">
+                <label for="male" class="signup-form__gender">مرد</label
+                ><input
+                  class="signup-form__radio"
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male"
+                />
+              </div>
+              <!-- end .signup-form__option -->
+            </div>
+            <!-- end .signup-form__selection -->
+          </div>
+          <!-- end .signup-form__item -->
+          <button class="signup-form__btn" id="signup-btn">عضویت</button>
+          <%- include('partials/form-footer.ejs') %>
+        </form>
+      </div>
+    </div>
+    <script src="/assets/js/ajax.js"></script>
+    <script src="/assets/js/slide.js"></script>
+    <script src="/assets/js/signup.js"></script>
+  </body>
+</html>

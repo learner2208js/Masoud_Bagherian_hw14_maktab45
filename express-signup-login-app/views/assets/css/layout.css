@@ -1,0 +1,12 @@
+.login-body,
+.signup-body {
+  width: 90%;
+  max-width: 500px;
+  margin: 80px auto;
+  background-color: #fff;
+  padding-top: 20px;
+  border-radius: 5px;
+  color: #444;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
