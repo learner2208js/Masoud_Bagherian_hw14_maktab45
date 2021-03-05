@@ -2,7 +2,7 @@ const validator = require('validator');
 const fs = require('fs');
 const path = require('path');
 const { fstat } = require('fs');
-const validateUsername = (username, page) => {
+const validateUsername = (username, page, pageUsername) => {
   if (username === '') {
     return {
       validity: false,
@@ -15,11 +15,16 @@ const validateUsername = (username, page) => {
       message: 'نام کاربری باید حداقل شامل هشت حرف باشد',
     };
   }
-  if (isUsernameAvailable(username) && page === '/sign-up') {
-    return {
-      validity: false,
-      message: 'این نام کاربری قبلا ثبت شده است',
-    };
+  if (isUsernameAvailable(username)) {
+    if (
+      page === '/sign-up' ||
+      (page === '/profile' && username !== pageUsername)
+    ) {
+      return {
+        validity: false,
+        message: 'این نام کاربری قبلا ثبت شده است',
+      };
+    }
   }
   return {
     validity: true,

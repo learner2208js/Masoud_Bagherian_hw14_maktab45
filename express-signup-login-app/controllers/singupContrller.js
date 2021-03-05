@@ -8,9 +8,11 @@ const sendSignupPage = (req, res) => {
   res.render('signup');
 };
 const validateSignup = (req, res, next) => {
-  const { username, password, email, gender } = req.body;
+  const { loggedInUsername, username, password, email, gender } = req.body;
   const formItemsStatus = [];
-  formItemsStatus.push(validateUsername(username, req.baseUrl));
+  formItemsStatus.push(
+    validateUsername(username, req.baseUrl, loggedInUsername)
+  );
   formItemsStatus.push(validatePassword(password));
   formItemsStatus.push(validateEmail(email));
   // console.log(formItemsStatus);
