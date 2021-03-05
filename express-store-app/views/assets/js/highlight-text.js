@@ -16,16 +16,18 @@ function getSubFirstIndexes(text, term) {
   }
   return indexes;
 }
-function highlightText(text, term) {
+function highlightText(text, term, classNameArray) {
   const idxArray = getSubFirstIndexes(text, term);
   let res = '';
   let beforeStr;
   let currentStr;
   idxArray.forEach((item, index, arr) => {
+    const classIndex = mkRandom(classNameArray.length);
     currentStr =
-      '<span class="highlighted">' +
+      `<span class="${classNameArray[classIndex]}">` +
       text.substring(arr[index], arr[index] + term.length) +
       '</span>';
+
     if (index === 0) {
       beforeStr = text.substring(0, idxArray[0]);
     } else {
@@ -38,4 +40,7 @@ function highlightText(text, term) {
   });
   res += text.substring(idxArray[idxArray.length - 1] + term.length);
   return res;
+}
+function mkRandom(length) {
+  return Math.floor(Math.random() * length);
 }

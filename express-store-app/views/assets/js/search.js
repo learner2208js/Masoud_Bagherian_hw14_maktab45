@@ -68,14 +68,27 @@ function highlightNameSection(term) {
   const nameParts = document.querySelectorAll('.product__name');
   nameParts.forEach((name) => {
     const text = name.textContent;
-    name.innerHTML = highlightText(text, term);
+    name.innerHTML = highlightText(text, term, [
+      'red',
+      'green',
+      'cyan',
+
+      'orange',
+      'yellow',
+    ]);
   });
 }
 function hightlihtMaterialSection(term) {
   const materialParts = document.querySelectorAll('.product__material');
   materialParts.forEach((material) => {
     const text = material.textContent;
-    material.innerHTML = highlightText(text, term);
+    material.innerHTML = highlightText(text, term, [
+      'red',
+      'green',
+      'cyan',
+      'orange',
+      'yellow',
+    ]);
   });
 }
 searchInput.addEventListener('input', searchProduct);
